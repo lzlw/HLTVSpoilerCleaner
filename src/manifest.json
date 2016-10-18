@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "HLTVSpoilerCleaner",
+  "version": "0.0.1",
+
+  "default_locale": "en",
+  "description": "Cleans HLTV.org of match spoilers.",
+  "author": "Lazlow Carmichael",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.hltv.org/*", "http://htlv.org/*"],
+      "js": ["js/jquery-3.1.1.js", "js/clean.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
